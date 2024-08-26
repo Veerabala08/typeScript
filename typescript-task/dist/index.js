@@ -12,18 +12,15 @@ function displayArray() {
         namesElement.textContent = `Names: ${names.join(', ')}`;
 }
 displayArray();
-
 var Signal;
 (function (Signal) {
     Signal["Red"] = "STOP";
     Signal["Yellow"] = "WAIT";
     Signal["Greem"] = "GO";
 })(Signal || (Signal = {}));
-
 function Action(sign) {
     console.log(`Vechicle ${sign}`);
 }
-
 Action(Signal.Red);
 Action(Signal.Yellow);
 let pi = 3.14159265359;

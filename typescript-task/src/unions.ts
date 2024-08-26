@@ -28,7 +28,6 @@ function getDbId(id: number | string){
     // id.toLowerCase()
 }
 
-
 const data: number[] = [1, 2, 3]
 const data2: string[] = ["1", "2", "3"]
 const data3: (string | number | boolean)[] = ["1", "2", 3, true]
@@ -36,3 +35,4 @@ const data3: (string | number | boolean)[] = ["1", "2", 3, true]
 let seatAllotment: "aisle" | "middle" | "window"
 
 seatAllotment = "aisle"
+
