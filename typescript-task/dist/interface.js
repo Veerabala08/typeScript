@@ -10,3 +10,11 @@ const Bala = { dbId: 22, email: "vb@g.com", userId: 2211,
     }
 };
 Bala.email = "vb@g.com";
+function getFullName(person) {
+    return `${person.firstName} ${person.lastName}`;
+}
+let person = {
+    firstName: 'John',
+    lastName: 'Doe'
+};
+console.log(getFullName(person));

@@ -32,3 +32,23 @@ Bala.email = "vb@g.com"
 
 
 
+interface Person1 {
+    firstName: string;
+    lastName: string;
+}
+
+function getFullName(person: Person1) {
+    return `${person.firstName} ${person.lastName}`;
+}
+
+let person = {
+    firstName: 'John',
+    lastName: 'Doe'
+};
+
+console.log(getFullName(person));
+
+
+
+
+

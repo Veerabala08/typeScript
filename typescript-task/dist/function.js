@@ -61,11 +61,24 @@ function added(a, b) {
 console.log(added(1, 2));
 console.log(added('a', 'b'));
 //method overloading
-class Calculator {
-    added2(a, b) {
-        return a + b;
+// The count() function can return a number or an array 
+// depending on the number of arguments that you pass into it:
+class Counter {
+    constructor() {
+        this.current = 0;
+    }
+    count(target) {
+        if (target) {
+            let values = [];
+            for (let start = this.current; start <= target; start++) {
+                values.push(start);
+            }
+            this.current = target;
+            return values;
+        }
+        return ++this.current;
     }
 }
-let calc = new Calculator();
-console.log(calc.added2(1, 2));
-console.log(calc.added2('a', 'b'));
+let counter = new Counter();
+console.log(counter.count());
+console.log(counter.count(5));
